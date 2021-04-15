@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2 class="heading">Coming soon</h2>
+            <div class="time-container">
+                <div class="days"><span class="sp" id="d">0</span>
+                <p>DAYS</p>
+                </div>
+                <div class="hours"><span class="sp" id="h">0</span>
+                    <p>HOURS</p>
+                </div>
+                <div class="minutes"><span class="sp" id="m">0</span>
+                    <p>MINUTES</p>
+                </div>
+                <div class="seconds"><span class="sp" id="s">0</span>
+                    <p>SECONDS</p>
+                </div>
+            </div>
+            <div class="last">
+                <input type="text" id="wish" placeholder="mm-dd-yy">
+                <button class="btn btn-primary" onclick="fun()">SET IT</button>
+                <button class="btn btn-danger" onclick="Reset()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#wish").datepicker({dateFormat:'mm-dd-yy'});
+            
+        });
+    </script>
+</body>
+</html>
