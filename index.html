@@ -28,19 +28,15 @@
             </div>
             <div class="last">
                 <input type="text" id="wish" placeholder="mm-dd-yy">
-                <button class="btn btn-primary" onclick="fun()">SET IT</button>
-                <button class="btn btn-success" onclick="Reset()">RESET</button>
+                <button class="btn btn-primary" id="set">SET IT</button>
+                <button class="btn btn-success" id="reset">RESET</button>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#wish").datepicker({dateFormat:'mm-dd-yy'});
-            
-        });
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
